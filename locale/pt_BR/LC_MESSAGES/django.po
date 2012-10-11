@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-09 23:42-0300\n"
+"POT-Creation-Date: 2012-10-10 23:39-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
 
-#: supercomputers/models.py:11
+#: supercomputers/models.py:11 supercomputers/models.py:21
+#: supercomputers/models.py:30
 msgid "Name"
 msgstr ""
 
@@ -28,4 +29,156 @@ msgstr ""
 
 #: supercomputers/models.py:13
 msgid "Segment"
+msgstr ""
+
+#: supercomputers/models.py:14
+msgid "Country"
+msgstr ""
+
+#: supercomputers/models.py:15
+msgid "City"
+msgstr ""
+
+#: supercomputers/models.py:16
+msgid "Website"
+msgstr ""
+
+#: supercomputers/models.py:17 supercomputers/models.py:24
+msgid "Description"
+msgstr ""
+
+#: supercomputers/models.py:22
+msgid "Status"
+msgstr ""
+
+#: supercomputers/models.py:23
+msgid "Areas"
+msgstr ""
+
+#: supercomputers/models.py:25 supercomputers/models.py:32
+msgid "Vendor"
+msgstr ""
+
+#: supercomputers/models.py:26
+msgid "Year install"
+msgstr ""
+
+#: supercomputers/models.py:31
+msgid "Model"
+msgstr ""
+
+#: supercomputers/models.py:33
+msgid "Number of nodes"
+msgstr ""
+
+#: supercomputers/models.py:34
+msgid "Memory per node(in Mb)"
+msgstr ""
+
+#: supercomputers/models.py:36
+msgid "Processor name"
+msgstr ""
+
+#: supercomputers/models.py:37
+msgid "Processor model"
+msgstr ""
+
+#: supercomputers/models.py:38
+msgid "Number of processors"
+msgstr ""
+
+#: supercomputers/models.py:39
+msgid "Number of cores per processor"
+msgstr ""
+
+#: supercomputers/models.py:40
+msgid "Speed processor"
+msgstr ""
+
+#: supercomputers/models.py:42
+msgid "Accelerator name"
+msgstr ""
+
+#: supercomputers/models.py:43
+msgid "Accelerator model"
+msgstr ""
+
+#: supercomputers/models.py:44
+msgid "Number of accelarators"
+msgstr ""
+
+#: supercomputers/models.py:45
+msgid "Number of cores per accelerator"
+msgstr ""
+
+#: supercomputers/models.py:46
+msgid "Aceletator speed"
+msgstr ""
+
+#: supercomputers/models.py:48
+msgid "Peak power"
+msgstr ""
+
+#: supercomputers/models.py:49
+msgid "Measured power"
+msgstr ""
+
+#: supercomputers/models.py:51
+msgid "Interconnection"
+msgstr ""
+
+#: supercomputers/models.py:52
+msgid "Operating system"
+msgstr ""
+
+#: supercomputers/models.py:56
+msgid "Benchmark date"
+msgstr ""
+
+#: supercomputers/models.py:57
+msgid "Number of cores"
+msgstr ""
+
+#: supercomputers/models.py:58
+msgid "Number of accelerators"
+msgstr ""
+
+#: supercomputers/models.py:59
+msgid "rmax"
+msgstr ""
+
+#: supercomputers/models.py:60
+msgid "rpeak"
+msgstr ""
+
+#: supercomputers/models.py:61
+msgid "nmax"
+msgstr ""
+
+#: supercomputers/models.py:62
+msgid "nhalft"
+msgstr ""
+
+#: supercomputers/models.py:63
+msgid "Compiler name"
+msgstr ""
+
+#: supercomputers/models.py:64
+msgid "Compier options"
+msgstr ""
+
+#: supercomputers/models.py:65
+msgid "Math library"
+msgstr ""
+
+#: supercomputers/models.py:66
+msgid "mpi library"
+msgstr ""
+
+#: supercomputers/models.py:67
+msgid "hpl input"
+msgstr ""
+
+#: supercomputers/models.py:68
+msgid "hpl output"
 msgstr ""
