@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-10 23:39-0300\n"
+"POT-Creation-Date: 2012-10-12 00:24-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,167 +18,195 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: supercomputers/models.py:11 supercomputers/models.py:21
-#: supercomputers/models.py:30
+#: supercomputers/forms.py:10 supercomputers/models.py:19
+#: supercomputers/models.py:40
 msgid "Name"
 msgstr "Nombre"
 
-#: supercomputers/models.py:12
+#: supercomputers/forms.py:11
+msgid "Insert name of center"
+msgstr ""
+
+#: supercomputers/forms.py:14
 msgid "Acronym"
 msgstr "Siglas"
 
-#: supercomputers/models.py:13
+#: supercomputers/forms.py:15
+msgid "Insert acronym of center"
+msgstr ""
+
+#: supercomputers/forms.py:18
 msgid "Segment"
 msgstr "Segmento"
 
-#: supercomputers/models.py:14
-msgid "Country"
+#: supercomputers/forms.py:19
+msgid "Select the segment from the center"
 msgstr ""
 
-#: supercomputers/models.py:15
+#: supercomputers/forms.py:22
+msgid "Countrie"
+msgstr ""
+
+#: supercomputers/forms.py:23
+msgid "Select the countrie of center"
+msgstr ""
+
+#: supercomputers/forms.py:26
 msgid "City"
 msgstr ""
 
-#: supercomputers/models.py:16
+#: supercomputers/forms.py:27
+msgid "Select the city of center"
+msgstr ""
+
+#: supercomputers/forms.py:30
 msgid "Website"
 msgstr ""
 
-#: supercomputers/models.py:17 supercomputers/models.py:24
+#: supercomputers/forms.py:31
+msgid "Input website of center"
+msgstr ""
+
+#: supercomputers/forms.py:34 supercomputers/models.py:28
 msgid "Description"
+msgstr ""
+
+#: supercomputers/forms.py:35
+msgid "Input a short description"
 msgstr ""
 
 #: supercomputers/models.py:22
 msgid "Status"
 msgstr ""
 
-#: supercomputers/models.py:23
+#: supercomputers/models.py:25
 msgid "Areas"
 msgstr ""
 
-#: supercomputers/models.py:25 supercomputers/models.py:32
+#: supercomputers/models.py:31 supercomputers/models.py:46
 msgid "Vendor"
 msgstr ""
 
-#: supercomputers/models.py:26
+#: supercomputers/models.py:34
 msgid "Year install"
 msgstr ""
 
-#: supercomputers/models.py:31
+#: supercomputers/models.py:43
 msgid "Model"
 msgstr ""
 
-#: supercomputers/models.py:33
+#: supercomputers/models.py:49
 msgid "Number of nodes"
 msgstr ""
 
-#: supercomputers/models.py:34
-msgid "Memory per node(in Mb)"
-msgstr ""
-
-#: supercomputers/models.py:36
-msgid "Processor name"
-msgstr ""
-
-#: supercomputers/models.py:37
-msgid "Processor model"
-msgstr ""
-
-#: supercomputers/models.py:38
-msgid "Number of processors"
-msgstr ""
-
-#: supercomputers/models.py:39
-msgid "Number of cores per processor"
-msgstr ""
-
-#: supercomputers/models.py:40
-msgid "Speed processor"
-msgstr ""
-
-#: supercomputers/models.py:42
-msgid "Accelerator name"
-msgstr ""
-
-#: supercomputers/models.py:43
-msgid "Accelerator model"
-msgstr ""
-
-#: supercomputers/models.py:44
-msgid "Number of accelarators"
-msgstr ""
-
-#: supercomputers/models.py:45
-msgid "Number of cores per accelerator"
-msgstr ""
-
-#: supercomputers/models.py:46
-msgid "Aceletator speed"
-msgstr ""
-
-#: supercomputers/models.py:48
-msgid "Peak power"
-msgstr ""
-
-#: supercomputers/models.py:49
-msgid "Measured power"
-msgstr ""
-
-#: supercomputers/models.py:51
-msgid "Interconnection"
-msgstr ""
-
 #: supercomputers/models.py:52
-msgid "Operating system"
+msgid "Memory per node (in Mb)"
 msgstr ""
 
 #: supercomputers/models.py:56
-msgid "Benchmark date"
-msgstr ""
-
-#: supercomputers/models.py:57
-msgid "Number of cores"
-msgstr ""
-
-#: supercomputers/models.py:58
-msgid "Number of accelerators"
+msgid "Processor name"
 msgstr ""
 
 #: supercomputers/models.py:59
-msgid "rmax"
-msgstr ""
-
-#: supercomputers/models.py:60
-msgid "rpeak"
-msgstr ""
-
-#: supercomputers/models.py:61
-msgid "nmax"
+msgid "Processor model"
 msgstr ""
 
 #: supercomputers/models.py:62
-msgid "nhalft"
-msgstr ""
-
-#: supercomputers/models.py:63
-msgid "Compiler name"
-msgstr ""
-
-#: supercomputers/models.py:64
-msgid "Compier options"
+msgid "Number of processors"
 msgstr ""
 
 #: supercomputers/models.py:65
-msgid "Math library"
-msgstr ""
-
-#: supercomputers/models.py:66
-msgid "mpi library"
-msgstr ""
-
-#: supercomputers/models.py:67
-msgid "hpl input"
+msgid "Number of cores per processor"
 msgstr ""
 
 #: supercomputers/models.py:68
+msgid "Speed processor"
+msgstr ""
+
+#: supercomputers/models.py:72
+msgid "Accelerator name"
+msgstr ""
+
+#: supercomputers/models.py:75
+msgid "Accelerator model"
+msgstr ""
+
+#: supercomputers/models.py:78
+msgid "Number of accelarators"
+msgstr ""
+
+#: supercomputers/models.py:81
+msgid "Number of cores per accelerator"
+msgstr ""
+
+#: supercomputers/models.py:84
+msgid "Aceletator speed"
+msgstr ""
+
+#: supercomputers/models.py:88
+msgid "Peak power"
+msgstr ""
+
+#: supercomputers/models.py:91
+msgid "Measured power"
+msgstr ""
+
+#: supercomputers/models.py:95
+msgid "Interconnection"
+msgstr ""
+
+#: supercomputers/models.py:98
+msgid "Operating system"
+msgstr ""
+
+#: supercomputers/models.py:104
+msgid "Benchmark date"
+msgstr ""
+
+#: supercomputers/models.py:107
+msgid "Number of cores"
+msgstr ""
+
+#: supercomputers/models.py:110
+msgid "Number of accelerators"
+msgstr ""
+
+#: supercomputers/models.py:113
+msgid "rmax"
+msgstr ""
+
+#: supercomputers/models.py:116
+msgid "rpeak"
+msgstr ""
+
+#: supercomputers/models.py:119
+msgid "nmax"
+msgstr ""
+
+#: supercomputers/models.py:122
+msgid "nhalft"
+msgstr ""
+
+#: supercomputers/models.py:125
+msgid "Compiler name"
+msgstr ""
+
+#: supercomputers/models.py:128
+msgid "Compier options"
+msgstr ""
+
+#: supercomputers/models.py:131
+msgid "Math library"
+msgstr ""
+
+#: supercomputers/models.py:134
+msgid "mpi library"
+msgstr ""
+
+#: supercomputers/models.py:137
+msgid "hpl input"
+msgstr ""
+
+#: supercomputers/models.py:140
 msgid "hpl output"
 msgstr ""

@@ -2,33 +2,16 @@
 
 from django.contrib.auth.models import User
 from django.db import models
-from choices import *
-
-from django.utils.translation import ugettext_lazy as _
 
 class Center(models.Model):
     user = models.ForeignKey(User)
-    name = models.CharField(max_length=50,
-        verbose_name=_('Name')
-    )
-    acronym = models.CharField(max_length=25,
-        verbose_name=_('Acronym')
-    )
-    segment = models.CharField(max_length=1, choices=SEGMENTS,
-        verbose_name=_('Segment')
-    )
-    country = models.CharField(max_length=2, choices=COUNTRIES,
-        verbose_name=_('Country')
-    )
-    city = models.CharField(max_length=50,
-        verbose_name=_('City')
-    )
-    url = models.URLField(blank=True,
-        verbose_name=_('Website')
-    )
-    description = models.TextField(blank=True,
-        verbose_name=_('Description')
-    )
+    name = models.CharField(max_length=50)
+    acronym = models.CharField(max_length=25)
+    segment = models.CharField(max_length=1)
+    country = models.CharField(max_length=2)
+    city = models.CharField(max_length=50)
+    url = models.URLField(blank=True)
+    description = models.TextField(blank=True)
 
 class System(models.Model):
     center = models.ForeignKey(Center)
