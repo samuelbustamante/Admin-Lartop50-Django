@@ -1,34 +1,36 @@
 # -*- encoding: utf-8 -*-
 
+from django.utils.translation import ugettext_lazy as _
+
 SEGMENTS = (
-    ('a', 'Académico'),
-    ('v', 'Investigación'),
-    ('g', 'Gubernamental'),
-    ('d', 'Industrial'),
-    ('o', 'Otro'),
+    ('a', _(u'Academic')),
+    ('v', _(u'Investigation')),
+    ('g', _(u'Governmental')),
+    ('d', _(u'Industrial')),
+    ('o', _(u'Other')),
 )
 
 COUNTRIES = (
-    ('ar', 'Argentina'),
-    ('bo', 'Bolivia'),
-    ('br', 'Brasil'),
-    ('cl', 'Chile'),
-    ('co', 'Colombia'),
-    ('cr', 'Costa Rica'),
-    ('cb', 'Cuba'),
-    ('ec', 'Ecuador'),
-    ('es', 'El Salvador'),
-    ('gu', 'Guatemala'),
-    ('ho', 'Honduras'),
-    ('mx', 'México'),
-    ('ni', 'Nicaragua'),
-    ('pa', 'Panamá'),
-    ('py', 'Paraguay'),
-    ('pe', 'Perú'),
-    ('pr', 'Puerto Rico'),
-    ('rd', 'República Dominicana'),
-    ('ur', 'Uruguay'),
-    ('ve', 'Venezuela'),
+    ('ar', _(u'Argentina')),
+    ('bo', _(u'Bolivia')),
+    ('br', _(u'Brazil')),
+    ('cl', _(u'Chile')),
+    ('co', _(u'Colombia')),
+    ('cr', _(u'Costa Rica')),
+    ('cb', _(u'Cuba')),
+    ('ec', _(u'Ecuador')),
+    ('es', _(u'El Salvador')),
+    ('gu', _(u'Guatemala')),
+    ('ho', _(u'Honduras')),
+    ('mx', _(u'Mexico')),
+    ('ni', _(u'Nicaragua')),
+    ('pa', _(u'Panama')),
+    ('py', _(u'Paraguay')),
+    ('pe', _(u'Peru')),
+    ('pr', _(u'Puerto Rico')),
+    ('rd', _(u'Dominican Republic')),
+    ('ur', _(u'Uruguay')),
+    ('ve', _(u'Venezuela')),
 )
 
 AREAS = (

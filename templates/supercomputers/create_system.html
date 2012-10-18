@@ -3,17 +3,12 @@
 {% load i18n %} 
 
 {% block content %}
+<h2>{% trans "Add a new System" %}</h2>
 <form class="form-horizontal" action="." method="post">
     {% csrf_token %}
-    {{ center|as_bootstrap }}
+    {{ form|as_bootstrap }}
     <div class="actions">
-        <button type="submit" class="btn primary">Submit</button>
+        <button type="submit" class="btn">{% trans "Add" %}</button>
     </div>
 </form>
-
-<!--
-{{ system }}
-{{ component }}
-{{ linpack }}
--->
 {% endblock %}

@@ -2,42 +2,143 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-16 11:16-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2012-10-18 15:40-0300\n"
+"PO-Revision-Date: 2012-10-18 13:58\n"
+"Last-Translator:   <admin@admin.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Translated-Using: django-rosetta 0.6.8\n"
+
+#: supercomputers/choices.py:6
+msgid "Academic"
+msgstr "Acadêmico"
+
+#: supercomputers/choices.py:7
+msgid "Investigation"
+msgstr "Investigação"
+
+#: supercomputers/choices.py:8
+msgid "Governmental"
+msgstr "Governamental"
+
+#: supercomputers/choices.py:9
+msgid "Industrial"
+msgstr ""
+
+#: supercomputers/choices.py:10
+msgid "Other"
+msgstr "Outro"
+
+#: supercomputers/choices.py:14
+msgid "Argentina"
+msgstr ""
+
+#: supercomputers/choices.py:15
+msgid "Bolivia"
+msgstr ""
+
+#: supercomputers/choices.py:16
+msgid "Brazil"
+msgstr "Brasil"
+
+#: supercomputers/choices.py:17
+msgid "Chile"
+msgstr ""
+
+#: supercomputers/choices.py:18
+msgid "Colombia"
+msgstr ""
+
+#: supercomputers/choices.py:19
+msgid "Costa Rica"
+msgstr ""
+
+#: supercomputers/choices.py:20
+msgid "Cuba"
+msgstr ""
+
+#: supercomputers/choices.py:21
+msgid "Ecuador"
+msgstr ""
+
+#: supercomputers/choices.py:22
+msgid "El Salvador"
+msgstr ""
+
+#: supercomputers/choices.py:23
+msgid "Guatemala"
+msgstr ""
+
+#: supercomputers/choices.py:24
+msgid "Honduras"
+msgstr ""
+
+#: supercomputers/choices.py:25
+msgid "Mexico"
+msgstr ""
+
+#: supercomputers/choices.py:26
+msgid "Nicaragua"
+msgstr ""
+
+#: supercomputers/choices.py:27
+msgid "Panama"
+msgstr ""
+
+#: supercomputers/choices.py:28
+msgid "Paraguay"
+msgstr ""
+
+#: supercomputers/choices.py:29
+msgid "Peru"
+msgstr ""
+
+#: supercomputers/choices.py:30
+msgid "Puerto Rico"
+msgstr ""
+
+#: supercomputers/choices.py:31
+msgid "Dominican Republic"
+msgstr "República Dominicana"
+
+#: supercomputers/choices.py:32
+msgid "Uruguay"
+msgstr ""
+
+#: supercomputers/choices.py:33
+msgid "Venezuela"
+msgstr ""
 
 #: supercomputers/forms.py:10 supercomputers/forms.py:37
 #: supercomputers/forms.py:61
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #: supercomputers/forms.py:13
 msgid "Acronym"
-msgstr ""
+msgstr "Acrônimo"
 
 #: supercomputers/forms.py:16
 msgid "Segment"
-msgstr ""
+msgstr "Segmento"
 
 #: supercomputers/forms.py:19
 msgid "Countrie"
-msgstr ""
+msgstr "País"
 
 #: supercomputers/forms.py:22
 msgid "City"
-msgstr ""
+msgstr "Cidade"
 
 #: supercomputers/forms.py:25
 msgid "Website"
@@ -186,3 +287,7 @@ msgstr ""
 #: supercomputers/forms.py:160
 msgid "hpl output"
 msgstr ""
+
+#: templates/supercomputers/create_center.html:6
+msgid "Add a new Center"
+msgstr "Adicionar um novo Centro"

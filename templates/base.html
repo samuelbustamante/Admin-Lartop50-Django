@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include "styles.html" %}
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                {% include "menu.html" %}
+                <div class="span12">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+        </div>
+        {% include "scripts.html" %}
+    </body>
+</html>
