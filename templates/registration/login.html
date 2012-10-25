@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% load i18n %}
+
+{% block content %}
+<div class="span6 offset3" style="margin-top: 60px;">
+	<div class="well">
+		<form method="post" action="." class="form-horizontal">{% csrf_token %} 
+			<legend>{% trans "Log in" %}</legend>
+			{{ form|as_bootstrap }}
+		    <div class="controls">
+				<p>{% trans "Forgot password" %}? <a href="{% url auth_password_reset %}">{% trans "Reset it" %}</a></p>
+	    	    <button type="submit" class="btn btn-primary">{% trans "Log in" %}</button>
+		    </div>
+		</form>
+	</div>
+	<p class="align-right muted">{% trans "Not member" %}? <a href="{% url registration_register %}">{% trans "Register" %}</a></p>
+</div>
+{% endblock %}

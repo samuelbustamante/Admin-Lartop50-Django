@@ -1,0 +1,19 @@
+{% load localeurl_tags %}
+
+<div class="btn-group pull-right">
+    <button class="btn dropdown-toggle" data-toggle="dropdown">
+        {% for lang in LANGUAGES %}                                                
+            {% if LANGUAGE_CODE == lang.0 %}
+                {{ lang.1 }}
+            {% endif %}
+        {% endfor %}
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        {% for lang in LANGUAGES %}
+            <li>
+                <a href="{{ request.path|chlocale:lang.0 }}">{{ lang.1 }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

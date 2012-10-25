@@ -3,12 +3,12 @@
 {% load i18n %} 
 
 {% block content %}
-<h2>{% trans "Add a new center" %}</h2>
+<h2>{% trans "Edit component" %}</h2>
 <form class="form-horizontal" action="." method="post">
     {% csrf_token %}
     {{ form|as_bootstrap }}
     <div class="actions">
-        <button type="submit" class="btn">{% trans "Add" %}</button>
+        <button type="submit" class="btn">{% trans "Edit" %}</button>
     </div>
 </form>
 {% endblock %}

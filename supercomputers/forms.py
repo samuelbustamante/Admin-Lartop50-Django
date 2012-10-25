@@ -43,7 +43,7 @@ class SystemForm(forms.ModelForm):
         label=_('Area')
     )
     description = forms.CharField(widget=forms.Textarea,
-        label=_('Decription')
+        label=_('Description')
     )
     vendor = forms.CharField(max_length=50,
         label=_('Vendor')
