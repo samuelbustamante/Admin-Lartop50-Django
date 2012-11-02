@@ -2,13 +2,14 @@
 
 from django.contrib.auth.models import User
 from django.db import models
+from choices import *
 
 class Center(models.Model):
     user = models.ForeignKey(User)
     name = models.CharField(max_length=50)
     acronym = models.CharField(max_length=25)
-    segment = models.CharField(max_length=1)
-    country = models.CharField(max_length=2)
+    segment = models.CharField(max_length=1, choices=SEGMENTS)
+    country = models.CharField(max_length=2, choices=COUNTRIES)
     city = models.CharField(max_length=50)
     url = models.URLField(blank=True)
     description = models.TextField(blank=True)

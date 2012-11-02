@@ -16,7 +16,7 @@ class CenterForm(forms.ModelForm):
         label=_('Segment')
     )
     country = forms.ChoiceField(choices=COUNTRIES,
-        label=_('Countrie')
+        label=_('Country')
     )
     city = forms.CharField(max_length=50,
         label=_('City')

@@ -9,6 +9,12 @@ from models import Center, System, Component, Linpack
 #----- Centers -----#
 
 @login_required
+def all_centers(request):
+    centers = Center.objects.filter(user=request.user)
+    return render_to_response('supercomputer/all_centers.html', locals(),\
+                             context_instance=RequestContext(request))
+
+@login_required
 def add_center(request):
     if request.method == 'POST':
         form = CenterForm(request.POST)

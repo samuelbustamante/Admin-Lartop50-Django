@@ -1,0 +1,37 @@
+{% load i18n %} 
+
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>{% trans "Center" %}</th>
+			<th>{% trans "Segment" %}</th>
+			<th>{% trans "Country" %}</th>
+			<th>{% trans "City" %}</th>
+			<th>{% trans "Website" %}</th>
+		</tr>
+	</thead>
+	<tbody>
+
+	{# Juntar en uno solo #}
+
+	{% if centers %}
+		{% for center in centers %}
+		<tr>
+			<td><a href="{% url show_center center.id %}">{{ center.acronym }} - {{ center.name }}</a></td>
+			<td><span class="badge badge-info">{{ center.get_segment_display }}</span></td>
+			<td>{{ center.get_country_display }}</td>
+			<td>{{ center.city }}</td>
+			<td>{{ center.url }}</td>
+		</tr>
+		{% endfor %}
+	{% else %}
+		<tr>
+			<td>{{ center.acronym }} - {{ center.name }}</td>
+			<td><span class="badge badge-info">{{ center.get_segment_display }}</span></td>
+			<td>{{ center.get_country_display }}</td>
+			<td>{{ center.city }}</td>
+			<td>{{ center.url }}</td>
+		</tr>
+	{% endif %}
+	</tbody>
+</table>

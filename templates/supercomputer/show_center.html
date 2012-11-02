@@ -1,1 +1,30 @@
-<p>{{ center }}</p>
+{% extends "supercomputer/base.html" %}
+{% load bootstrap_tags %}
+{% load i18n %} 
+
+{% block container %}
+<div class="span12">
+	<div class="page-header">
+		<div class="row">
+			<div class="span6">
+				<h4>
+					<a href="{% url all_centers %}">{% trans "My centers" %}</a>
+					<span>&nbsp;&#47;&nbsp;</span>
+					<span>{{ center.acronym }}</span>
+				</h4>
+			</div>
+			<div class="span6">
+				<a href="#" class="btn btn-danger pull-right">
+					<i class="icon-trash icon-white"></i>
+					<span>{% trans "Delete" %}</span>
+				</a>
+			<a href="{% url edit_center center.id %}" class="btn btn-success pull-right">
+					<i class="icon-pencil icon-white"></i>
+					<span>{% trans "Edit" %}</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	{% include "supercomputer/table_centers.html" %}
+</div>
+{% endblock %}

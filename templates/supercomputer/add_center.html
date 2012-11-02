@@ -1,18 +1,12 @@
-{% extends "base.html" %}
+{% extends "supercomputer/base.html" %}
 {% load bootstrap_tags %}
 {% load i18n %} 
 
-{% block content %}
-<div class="row" style="padding-top: 60px; background: #FFF;">
-	<div class="span12">
-		<h2>{% trans "Add a new center" %}</h2>
-		<form class="form-horizontal" action="." method="post">
-    		{% csrf_token %}
-		    {{ form|as_bootstrap }}
-		    <div class="actions">
-		        <button type="submit" class="btn">{% trans "Add" %}</button>
-		    </div>
-		</form>
+{% block container %}
+<div class="span12">
+	<div class="page-header">
+		<h4>{% trans "Add a new center" %}</h4>
 	</div>
+	{% include "supercomputer/form_base.html" %}
 </div>
 {% endblock %}

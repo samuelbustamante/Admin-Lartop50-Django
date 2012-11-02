@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
-{% block container %}
-<div class="container">
-    <div class="row" style="padding-top: 60px; background: #FFF;">
-		{% block content %}{% endblock %}
+{% block content %}
+<div class="container well" style="padding:15px 45px;margin:40px auto;">
+	<div class="row">
+		{% block container %}{% endblock %}
 	</div>
 </div>
 {% endblock %}

@@ -1,0 +1,17 @@
+{% load bootstrap_tags %}
+{% load i18n %} 
+
+<form class="form-horizontal" action="." method="post">
+   	{% csrf_token %}
+	{{ form|as_bootstrap }}
+	<div class="controls">
+		<button type="submit" class="btn btn-success">
+			<i class="icon-ok icon-white"></i>
+			<span>{% trans "Save" %}</span>
+		</button>
+		<a href="../" class="btn btn-danger">
+			<i class="icon-remove icon-white"></i>
+			<span>{% trans "Cancel" %}</span>
+		</a>
+	</div>
+</form>

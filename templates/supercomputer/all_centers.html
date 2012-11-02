@@ -1,0 +1,26 @@
+{% extends "supercomputer/base.html" %}
+{% load bootstrap_tags %}
+{% load i18n %} 
+
+{% block container %}
+<div class="span12">
+	<div class="page-header">
+		<div class="row">
+			<div class="span6">
+				<h4>{% trans "My centers" %}</h4>
+			</div>
+			<div class="span6">
+				<a href="{% url add_center %}" class="btn btn-primary pull-right">
+					<i class="icon-plus icon-white"></i>
+					<span>{% trans "Add center" %}</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	{% if centers %}
+		{% include "supercomputer/table_centers.html" %}
+	{% else %}
+		<p>{% trans "Not centers" %}</p>
+	{% endif %}
+</div>
+{% endblock %}
