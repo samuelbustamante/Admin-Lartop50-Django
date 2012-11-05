@@ -1,0 +1,34 @@
+{% load i18n %} 
+
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>{% trans "Name" %}</th>
+			<th>{% trans "Status" %}</th>
+			<th>{% trans "Area" %}</th>
+			<th>{% trans "Vendor" %}</th>
+			<th>{% trans "Year install" %}</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% if systems %}
+			{% for system in systems %}
+			<tr>
+				<td><a href="{% url show_system system.id %}">{{ system.name }}</a></td>
+				<td><span class="badge badge-info">{{ system.status }}</span></td>
+				<td>{{ system.get_area_display }}</td>
+				<td>{{ system.vendor }}</td>
+				<td>{{ system.get_year_install_display }}</td>
+			</tr>
+			{% endfor %}
+		{% else %}
+			<tr>
+				<td>{{ system.name }}</td>
+				<td><span class="badge badge-info">{{ system.status }}</span></td>
+				<td>{{ system.get_area_display }}</td>
+				<td>{{ system.vendor }}</td>
+				<td>{{ system.get_year_install_display }}</td>
+			</tr>
+		{% endif %}
+	</tbody>
+</table>

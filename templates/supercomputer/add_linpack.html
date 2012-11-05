@@ -7,7 +7,11 @@
 		<h4>
 			<a href="{% url all_centers %}">{% trans "My centers" %}</a>
 			<span>&nbsp;&#47;&nbsp;</span>
-			<span>{% trans "Add center" %}</span>
+			<a href="{% url show_center system.center.id %}">{{ system.center.acronym }}</a>
+			<span>&nbsp;&#47;&nbsp;</span>
+			<a href="{% url show_system system.id %}">{{ system.name }}</a>
+			<span>&nbsp;&#47;&nbsp;</span>
+			<span>{% trans "Add linpack" %}</span>
 		</h4>
 	</div>
 	{% include "supercomputer/form_base.html" %}

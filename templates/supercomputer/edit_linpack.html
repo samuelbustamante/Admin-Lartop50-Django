@@ -7,11 +7,11 @@
 		<h4>
 			<a href="{% url all_centers %}">{% trans "My centers" %}</a>
 			<span>&nbsp;&#47;&nbsp;</span>
-			<a href="{% url show_center component.system.center.id %}">{{ component.system.center.acronym }}</a>
+			<a href="{% url show_center linpack.system.center.id %}">{{ linpack.system.center.acronym }}</a>
 			<span>&nbsp;&#47;&nbsp;</span>
-			<a href="{% url show_system component.system.id %}">{{ component.system.name }}</a>
+			<a href="{% url show_system linpack.system.id %}">{{ linpack.system.name }}</a>
 			<span>&nbsp;&#47;&nbsp;</span>
-			<a href="{% url show_component component.id %}">{{ component.benchmark_date }}</a>
+			<a href="{% url show_linpack linpack.id %}">{{ linpack.benchmark_date }}</a>
 			<span>&nbsp;&#47;&nbsp;</span>
 			<span>{% trans "Edit" %}</span>
 		</h4>

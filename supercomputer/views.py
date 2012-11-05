@@ -31,6 +31,7 @@ def add_center(request):
 @login_required
 def show_center(request, center):
     center = get_object_or_404(Center, pk=center, user=request.user)
+    systems = System.objects.filter(center=center.pk)
 
     return render_to_response('supercomputer/show_center.html', locals(),\
                              context_instance=RequestContext(request))
@@ -71,6 +72,8 @@ def add_system(request, center):
 @login_required
 def show_system(request, system):
     system = get_object_or_404(System, pk=system, center__user=request.user)
+    components = Component.objects.filter(system=system.pk)
+    linpacks = Linpack.objects.filter(system=system.pk)
 
     return render_to_response('supercomputer/show_system.html', locals(),\
                              context_instance=RequestContext(request))
@@ -101,7 +104,7 @@ def add_component(request, system):
             component = form.save(commit=False)
             component.system = system
             component.save()
-            return redirect('show_component', system=system.pk)
+            return redirect('show_component', component=component.pk)
     else:
         form = ComponentForm()
     return render_to_response('supercomputer/add_component.html', locals(),\
@@ -117,7 +120,7 @@ def show_component(request, component):
         
 @login_required
 def edit_component(request, component):
-    component = get_object_or_404(System, pk=component,\
+    component = get_object_or_404(Component, pk=component,\
                                   system__center__user=request.user)
 
     if request.method == 'POST':
@@ -130,44 +133,44 @@ def edit_component(request, component):
     return render_to_response('supercomputer/edit_component.html', locals(),\
                               context_instance=RequestContext(request))
 
-#----- Linpaks -----#
+#----- Linpacks -----#
 
 @login_required
-def add_linpak(request, system):
+def add_linpack(request, system):
     system = get_object_or_404(System, pk=system, center__user=request.user)
 
     if request.method == 'POST':
-        form = LinpakForm(request.POST)
+        form = LinpackForm(request.POST)
         if form.is_valid():
             linpak = form.save(commit=False)
             linpak.system = system
             linpak.save()
             return redirect('show_system', system=system.pk)
     else:
-        form = LinpakForm()
-    return render_to_response('supercomputer/add_linpak.html', locals(),\
+        form = LinpackForm()
+    return render_to_response('supercomputer/add_linpack.html', locals(),\
                               context_instance=RequestContext(request))
 
 @login_required
-def show_linpak(request, linpak):
-    system = get_object_or_404(Linpak, pk=linpak,\
+def show_linpack(request, linpack):
+    linpack = get_object_or_404(Linpack, pk=linpack,\
                                system__center__user=request.user)
 
-    return render_to_response('supercomputer/show_linpak.html', locals(),\
+    return render_to_response('supercomputer/show_linpack.html', locals(),\
                               context_instance=RequestContext(request))
         
 @login_required
-def edit_linpak(request, id_linpak):
-    linpak = get_object_or_404(Linpak, pk=id_linpak,\
+def edit_linpack(request, id_linpack):
+    linpack = get_object_or_404(Linpack, pk=id_linpack,\
                                system__center__user=request.user)
 
     if request.method == 'POST':
-        form = LinpakForm(request.POST, instance=linpak)
+        form = LinpackForm(request.POST, instance=linpack)
         if form.is_valid():
             linpak = form.save()
-            return redirect('show_linpak', id_linpak=linpak.pk)
+            return redirect('show_linpack', linpack=linpack.pk)
     else:
-        form = LinpakForm(instance=linpak)
-    return render_to_response('supercomputer/edit_linpak.html', locals(),\
+        form = LinpackForm(instance=linpack)
+    return render_to_response('supercomputer/edit_linpack.html', locals(),\
                               context_instance=RequestContext(request))
 

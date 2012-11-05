@@ -21,10 +21,10 @@ class System(models.Model):
     center = models.ForeignKey(Center)
     name = models.CharField(max_length=50)
     status = models.BooleanField()
-    area = models.CharField(max_length=1)
+    area = models.CharField(max_length=1, choices=AREAS)
     description = models.TextField()
     vendor = models.CharField(max_length=50)
-    year_install = models.CharField(max_length=2)
+    year_install = models.CharField(max_length=2, choices=YEARS)
 
     def __unicode__(self):
         return '%s - %s' % (self.center, self.name)

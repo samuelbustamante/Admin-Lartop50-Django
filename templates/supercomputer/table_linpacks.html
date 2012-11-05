@@ -1,0 +1,41 @@
+{% load i18n %} 
+
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>{% trans "Benchmark date" %}</th>
+			<th>{% trans "Number of cores" %}</th>
+			<th>{% trans "Number of accelerators" %}</th>
+			<th>{% trans "rmax" %}</th>
+			<th>{% trans "rpeak" %}</th>
+			<th>{% trans "nmax" %}</th>
+			<th>{% trans "nhalf" %}</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% if linpacks %}
+			{% for linpack in linpacks %}
+			<tr>
+				<td><a href="{% url show_linpack linpack.id %}">{{ linpack.benchmark_date }}</a></td>
+				<td><span class="badge badge-info">{{ linpack.number_cores }}</span></td>
+				<td><span class="badge badge-info">{{ linpack.number_accelerator }}</span></td>
+				<td>{{ linpack.rmax }}</td>
+				<td>{{ linpack.rpeak }}</td>
+				<td>{{ linpack.nmax }}</td>
+				<td>{{ linpack.nhalf }}</td>
+			</tr>
+			{% endfor %}
+		{% else %}
+				<tr>
+				<td>{{ linpack.benchmark_date }}</td>
+				<td><span class="badge badge-info">{{ linpack.number_cores }}</span></td>
+				<td><span class="badge badge-info">{{ linpack.number_accelerator }}</span></td>
+				<td>{{ linpack.rmax }}</td>
+				<td>{{ linpack.rpeak }}</td>
+				<td>{{ linpack.nmax }}</td>
+				<td>{{ linpack.nhalf }}</td>
+			</tr>
+		
+		{% endif %}
+	</tbody>
+</table>

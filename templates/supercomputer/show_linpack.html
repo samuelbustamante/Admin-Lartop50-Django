@@ -9,11 +9,11 @@
 				<h4>
 					<a href="{% url all_centers %}">{% trans "My centers" %}</a>
 					<span>&nbsp;&#47;&nbsp;</span>
-					<a href="{% url show_center component.system.center.id %}">{{ component.system.center.acronym }}</a>
+					<a href="{% url show_center linpack.system.center.id %}">{{ linpack.system.center.acronym }}</a>
 					<span>&nbsp;&#47;&nbsp;</span>
-					<a href="{% url show_system component.system.id %}">{{ component.system.name }}</a>
+					<a href="{% url show_system linpack.system.id %}">{{ linpack.system.name }}</a>
 					<span>&nbsp;&#47;&nbsp;</span>
-					<span>{{ component.name }}</span>
+					<span>{{ linpack.benchmark_date }}</span>
 				</h4>
 			</div>
 			<div class="span4">
@@ -21,13 +21,13 @@
 					<i class="icon-trash icon-white"></i>
 					<span>{% trans "Delete" %}</span>
 				</a>
-			<a href="{% url edit_component component.id %}" class="btn btn-success pull-right">
+			<a href="{% url edit_linpack linpack.id %}" class="btn btn-success pull-right">
 					<i class="icon-pencil icon-white"></i>
 					<span>{% trans "Edit" %}</span>
 				</a>
 			</div>
 		</div>
 	</div>
-	{% include "supercomputer/table_components.html" %}
+	{% include "supercomputer/table_linpacks.html" %}
 </div>
 {% endblock %}
