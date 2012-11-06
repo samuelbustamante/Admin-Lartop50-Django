@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-19 18:35-0300\n"
-"PO-Revision-Date: 2012-10-19 16:36\n"
+"POT-Creation-Date: 2012-11-06 16:35-0300\n"
+"PO-Revision-Date: 2012-11-06 14:28\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,303 +19,468 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "X-Translated-Using: django-rosetta 0.6.8\n"
 
-#: supercomputers/choices.py:6
+#: supercomputer/choices.py:6
 msgid "Academic"
 msgstr "Académico"
 
-#: supercomputers/choices.py:7
+#: supercomputer/choices.py:7
 msgid "Investigation"
 msgstr "Investigación"
 
-#: supercomputers/choices.py:8
+#: supercomputer/choices.py:8
 msgid "Governmental"
 msgstr "Gubernamental"
 
-#: supercomputers/choices.py:9
+#: supercomputer/choices.py:9
 msgid "Industrial"
 msgstr ""
 
-#: supercomputers/choices.py:10
+#: supercomputer/choices.py:10
 msgid "Other"
 msgstr "Otro"
 
-#: supercomputers/choices.py:14
+#: supercomputer/choices.py:14
 msgid "Argentina"
 msgstr ""
 
-#: supercomputers/choices.py:15
+#: supercomputer/choices.py:15
 msgid "Bolivia"
 msgstr ""
 
-#: supercomputers/choices.py:16
+#: supercomputer/choices.py:16
 msgid "Brazil"
 msgstr "Brasil"
 
-#: supercomputers/choices.py:17
+#: supercomputer/choices.py:17
 msgid "Chile"
 msgstr ""
 
-#: supercomputers/choices.py:18
+#: supercomputer/choices.py:18
 msgid "Colombia"
 msgstr ""
 
-#: supercomputers/choices.py:19
+#: supercomputer/choices.py:19
 msgid "Costa Rica"
 msgstr ""
 
-#: supercomputers/choices.py:20
+#: supercomputer/choices.py:20
 msgid "Cuba"
 msgstr ""
 
-#: supercomputers/choices.py:21
+#: supercomputer/choices.py:21
 msgid "Ecuador"
 msgstr ""
 
-#: supercomputers/choices.py:22
+#: supercomputer/choices.py:22
 msgid "El Salvador"
 msgstr ""
 
-#: supercomputers/choices.py:23
+#: supercomputer/choices.py:23
 msgid "Guatemala"
 msgstr ""
 
-#: supercomputers/choices.py:24
+#: supercomputer/choices.py:24
 msgid "Honduras"
 msgstr ""
 
-#: supercomputers/choices.py:25
+#: supercomputer/choices.py:25
 msgid "Mexico"
 msgstr "México"
 
-#: supercomputers/choices.py:26
+#: supercomputer/choices.py:26
 msgid "Nicaragua"
 msgstr ""
 
-#: supercomputers/choices.py:27
+#: supercomputer/choices.py:27
 msgid "Panama"
 msgstr ""
 
-#: supercomputers/choices.py:28
+#: supercomputer/choices.py:28
 msgid "Paraguay"
 msgstr ""
 
-#: supercomputers/choices.py:29
+#: supercomputer/choices.py:29
 msgid "Peru"
 msgstr "Perú"
 
-#: supercomputers/choices.py:30
+#: supercomputer/choices.py:30
 msgid "Puerto Rico"
 msgstr ""
 
-#: supercomputers/choices.py:31
+#: supercomputer/choices.py:31
 msgid "Dominican Republic"
 msgstr "República Dominicana"
 
-#: supercomputers/choices.py:32
+#: supercomputer/choices.py:32
 msgid "Uruguay"
 msgstr ""
 
-#: supercomputers/choices.py:33
+#: supercomputer/choices.py:33
 msgid "Venezuela"
 msgstr ""
 
-#: supercomputers/forms.py:10 supercomputers/forms.py:37
-#: supercomputers/forms.py:61
+#: supercomputer/forms.py:10 supercomputer/forms.py:37
+#: supercomputer/forms.py:61 templates/supercomputer/table_components.html:6
+#: templates/supercomputer/table_systems.html:6
 msgid "Name"
 msgstr "Nombre"
 
-#: supercomputers/forms.py:13
+#: supercomputer/forms.py:13
 msgid "Acronym"
 msgstr "Acrónimo"
 
-#: supercomputers/forms.py:16
+#: supercomputer/forms.py:16 templates/supercomputer/table_centers.html:7
 msgid "Segment"
 msgstr "Segmento"
 
-#: supercomputers/forms.py:19
-msgid "Countrie"
+#: supercomputer/forms.py:19 templates/supercomputer/table_centers.html:8
+#, fuzzy
+msgid "Country"
 msgstr "País"
 
-#: supercomputers/forms.py:22
+#: supercomputer/forms.py:22 templates/supercomputer/table_centers.html:9
 msgid "City"
 msgstr "Ciudad"
 
-#: supercomputers/forms.py:25
+#: supercomputer/forms.py:25 templates/supercomputer/table_centers.html:10
 msgid "Website"
 msgstr "Sitio web"
 
-#: supercomputers/forms.py:28 supercomputers/forms.py:46
+#: supercomputer/forms.py:28 supercomputer/forms.py:46
 msgid "Description"
 msgstr "Descripción"
 
-#: supercomputers/forms.py:40
+#: supercomputer/forms.py:40 templates/supercomputer/table_systems.html:7
 msgid "Status"
 msgstr "Estado"
 
-#: supercomputers/forms.py:43
+#: supercomputer/forms.py:43 templates/supercomputer/table_systems.html:8
 msgid "Area"
 msgstr ""
 
-#: supercomputers/forms.py:49 supercomputers/forms.py:67
+#: supercomputer/forms.py:49 supercomputer/forms.py:67
+#: templates/supercomputer/table_systems.html:9
 msgid "Vendor"
 msgstr "Vendedor"
 
-#: supercomputers/forms.py:52
+#: supercomputer/forms.py:52 templates/supercomputer/table_systems.html:10
 msgid "Year install"
 msgstr "Año de instalación"
 
-#: supercomputers/forms.py:64
+#: supercomputer/forms.py:64
 msgid "Model"
 msgstr "Modelo"
 
-#: supercomputers/forms.py:70
+#: supercomputer/forms.py:70
 msgid "Number of nodes"
 msgstr "Número de nodos"
 
-#: supercomputers/forms.py:73
+#: supercomputer/forms.py:73
 msgid "Memory per node (in Mb)"
 msgstr "Memoria por nodo (en Mb)"
 
-#: supercomputers/forms.py:76
+#: supercomputer/forms.py:76
 msgid "Processor name"
 msgstr "Nombre del procesador"
 
-#: supercomputers/forms.py:79
+#: supercomputer/forms.py:79
 msgid "Processor model"
 msgstr "Modelo del procesador"
 
-#: supercomputers/forms.py:82
+#: supercomputer/forms.py:82
 msgid "Number of processors"
 msgstr "Número de procesadores"
 
-#: supercomputers/forms.py:85
+#: supercomputer/forms.py:85
 msgid "Number of cores per processor"
 msgstr "Número de núcleos por procesador"
 
-#: supercomputers/forms.py:88
+#: supercomputer/forms.py:88
 msgid "Speed processor"
 msgstr "Velocidad del procesador"
 
-#: supercomputers/forms.py:91
+#: supercomputer/forms.py:91
 msgid "Accelerator name"
 msgstr "Nombre del acelerador"
 
-#: supercomputers/forms.py:94
+#: supercomputer/forms.py:94
 msgid "Accelerator model"
 msgstr "Modelo del acelerador"
 
-#: supercomputers/forms.py:97
+#: supercomputer/forms.py:97
 msgid "Number of accelarators"
 msgstr "Número de aceleradores"
 
-#: supercomputers/forms.py:100
+#: supercomputer/forms.py:100
 msgid "Number of cores per accelerator"
 msgstr "Número de núcleos por acelerador"
 
-#: supercomputers/forms.py:103
+#: supercomputer/forms.py:103
 msgid "Aceletator speed"
 msgstr "Velocidad del acelerador"
 
-#: supercomputers/forms.py:106
+#: supercomputer/forms.py:106
 msgid "Peak power"
 msgstr "Potencia pico"
 
-#: supercomputers/forms.py:109
+#: supercomputer/forms.py:109
 msgid "Measured power"
 msgstr "Potencia media"
 
-#: supercomputers/forms.py:112
+#: supercomputer/forms.py:112
 msgid "Interconnection"
 msgstr "Interconexión"
 
-#: supercomputers/forms.py:115
+#: supercomputer/forms.py:115 templates/supercomputer/table_components.html:10
 msgid "Operating system"
 msgstr "Sistema operativo"
 
-#: supercomputers/forms.py:124
+#: supercomputer/forms.py:124 templates/supercomputer/table_linpacks.html:6
 msgid "Benchmark date"
 msgstr "Fecha de benchmark"
 
-#: supercomputers/forms.py:127
+#: supercomputer/forms.py:127 templates/supercomputer/table_linpacks.html:7
 msgid "Number of cores"
 msgstr "Número de núcleos"
 
-#: supercomputers/forms.py:130
+#: supercomputer/forms.py:130 templates/supercomputer/table_linpacks.html:8
 msgid "Number of accelerators"
 msgstr "Número de aceleradores"
 
-#: supercomputers/forms.py:133
+#: supercomputer/forms.py:133 templates/supercomputer/table_linpacks.html:9
 msgid "rmax"
 msgstr ""
 
-#: supercomputers/forms.py:136
+#: supercomputer/forms.py:136 templates/supercomputer/table_linpacks.html:10
 msgid "rpeak"
 msgstr ""
 
-#: supercomputers/forms.py:139
+#: supercomputer/forms.py:139 templates/supercomputer/table_linpacks.html:11
 msgid "nmax"
 msgstr ""
 
-#: supercomputers/forms.py:142
+#: supercomputer/forms.py:142
 msgid "nhalft"
 msgstr ""
 
-#: supercomputers/forms.py:145
+#: supercomputer/forms.py:145
 msgid "Compiler name"
 msgstr "Nombre del compilador"
 
-#: supercomputers/forms.py:148
+#: supercomputer/forms.py:148
 msgid "Compier options"
 msgstr "Opciones del compilador"
 
-#: supercomputers/forms.py:151
+#: supercomputer/forms.py:151
 msgid "Math library"
 msgstr "Librería Math"
 
-#: supercomputers/forms.py:154
+#: supercomputer/forms.py:154
 msgid "mpi library"
 msgstr "Librería MPI"
 
-#: supercomputers/forms.py:157
+#: supercomputer/forms.py:157
 msgid "hpl input"
 msgstr "HPL de entrada"
 
-#: supercomputers/forms.py:160
+#: supercomputer/forms.py:160
 msgid "hpl output"
 msgstr "HPL de salida"
 
-#: templates/supercomputers/create_center.html:6
-msgid "Add a new center"
-msgstr "Crear un nuevo centro"
+#: templates/account.html:11
+msgid "Log out"
+msgstr "Cerrar sesión"
 
-#: templates/supercomputers/create_center.html:11
-#: templates/supercomputers/create_component.html:11
-#: templates/supercomputers/create_system.html:11
+#: templates/registration/activate.html:7
+msgid "Account successfully activated"
+msgstr "Cuenta de usuario activada"
+
+#: templates/registration/activate.html:8 templates/registration/login.html:9
+#: templates/registration/login.html:13
+#: templates/registration/password_reset_complete.html:7
+#: templates/registration/password_reset_form.html:15
+#: templates/registration/registration_form.html:16
+msgid "Log in"
+msgstr "Iniciar sesión"
+
+#: templates/registration/activate.html:10
+msgid "Account activation failed"
+msgstr "Cuenta de usuario no activada"
+
+#: templates/registration/activation_complete.html:6
+msgid "Your account is now activated."
+msgstr "Su cuenta de usuario está activada"
+
+#: templates/registration/login.html:12
+msgid "Forgot password"
+msgstr "Olvidó su contraseña"
+
+#: templates/registration/login.html:12
+msgid "Reset it"
+msgstr "Resetear"
+
+#: templates/registration/login.html:17
+msgid "Not member"
+msgstr "No eres miembro"
+
+#: templates/registration/login.html:17
+#: templates/registration/registration_form.html:9
+msgid "Register"
+msgstr "Registrarse"
+
+#: templates/registration/logout.html:6
+msgid "Logged out"
+msgstr "Sesión terminada"
+
+#: templates/registration/password_change_done.html:6
+msgid "Password changed"
+msgstr "Contraseña cambiada"
+
+#: templates/registration/password_change_form.html:9
+msgid "Change password"
+msgstr "Cambiar contraseña"
+
+#: templates/registration/password_change_form.html:12
+msgid "Submit"
+msgstr "Enviar"
+
+#: templates/registration/password_reset_complete.html:6
+msgid "Password reset successfully"
+msgstr "Contraseña actualizada"
+
+#: templates/registration/password_reset_confirm.html:10
+#: templates/registration/password_reset_confirm.html:13
+#: templates/registration/password_reset_form.html:8
+msgid "Reset password"
+msgstr "Restablecer contraseña"
+
+#: templates/registration/password_reset_confirm.html:17
+msgid "Password reset failed"
+msgstr "Contraseña no restablecida"
+
+#: templates/registration/password_reset_done.html:6
+msgid "Email with password reset instructions has been sent."
+msgstr ""
+"Se le envió un correo electrónico con instrucciones para restablecer su "
+"contraseña."
+
+#: templates/registration/password_reset_email.html:2
+#, python-format
+msgid "Reset password at %(site_name)s"
+msgstr "Restablecer la contraseña en %(site_name)s"
+
+#: templates/registration/password_reset_form.html:11
+msgid "Reset"
+msgstr "Restablecer"
+
+#: templates/registration/password_reset_form.html:15
+msgid "Remember password"
+msgstr "Recordar contraseña"
+
+#: templates/registration/registration_complete.html:6
+msgid "You are now registered. Activation email sent."
+msgstr ""
+"Ahora está registrado. Se le envió un correo electrónico de activación."
+
+#: templates/registration/registration_form.html:12
+msgid "register"
+msgstr "Registrarse"
+
+#: templates/registration/registration_form.html:16
+msgid "A member"
+msgstr "Miembro"
+
+#: templates/supercomputer/add_center.html:8
+#: templates/supercomputer/add_component.html:8
+#: templates/supercomputer/add_linpack.html:8
+#: templates/supercomputer/add_system.html:8
+#: templates/supercomputer/all_centers.html:10
+#: templates/supercomputer/edit_center.html:8
+#: templates/supercomputer/edit_component.html:8
+#: templates/supercomputer/edit_linpack.html:8
+#: templates/supercomputer/show_center.html:11
+#: templates/supercomputer/show_component.html:10
+#: templates/supercomputer/show_linpack.html:10
+#: templates/supercomputer/show_system.html:11
+msgid "My centers"
+msgstr "Mis centros"
+
+#: templates/supercomputer/add_center.html:10
+msgid "Add center"
+msgstr "Crear centro"
+
+#: templates/supercomputer/add_component.html:14
+msgid "Add component"
+msgstr "Editar componente"
+
+#: templates/supercomputer/add_linpack.html:14
+msgid "Add linpack"
+msgstr "Crear linpack"
+
+#: templates/supercomputer/add_system.html:12
+msgid "Add system"
+msgstr "Crear sistema"
+
+#: templates/supercomputer/all_centers.html:15
+#: templates/supercomputer/show_center.html:39
+#: templates/supercomputer/show_system.html:41
+#: templates/supercomputer/show_system.html:57
 msgid "Add"
 msgstr "Crear"
 
-#: templates/supercomputers/create_component.html:6
-msgid "Add a new component"
-msgstr "Crear un nuevo componente"
-
-#: templates/supercomputers/create_system.html:6
-msgid "Add a new system"
-msgstr "Crear un nuevo sistema"
-
-#: templates/supercomputers/edit_center.html:6
-msgid "Edit center"
+#: templates/supercomputer/all_centers.html:23
+msgid "Not centers"
 msgstr "Editar centro"
 
-#: templates/supercomputers/edit_center.html:11
-#: templates/supercomputers/edit_component.html:11
-#: templates/supercomputers/edit_system.html:11
+#: templates/supercomputer/edit_center.html:12
+#: templates/supercomputer/edit_component.html:16
+#: templates/supercomputer/edit_linpack.html:16
+#: templates/supercomputer/edit_system.html:11
+#: templates/supercomputer/show_center.html:23
+#: templates/supercomputer/show_component.html:26
+#: templates/supercomputer/show_linpack.html:26
+#: templates/supercomputer/show_system.html:25
 msgid "Edit"
 msgstr "Editar"
 
-#: templates/supercomputers/edit_component.html:6
-msgid "Edit component"
-msgstr "Editar componente"
-
-#: templates/supercomputers/edit_system.html:6
+#: templates/supercomputer/edit_system.html:6
 msgid "Edit system"
 msgstr "Editar sistema"
+
+#: templates/supercomputer/form_base.html:10
+msgid "Save"
+msgstr "Guardar"
+
+#: templates/supercomputer/show_center.html:19
+#: templates/supercomputer/show_component.html:22
+#: templates/supercomputer/show_linpack.html:22
+#: templates/supercomputer/show_system.html:21
+msgid "Delete"
+msgstr "Eliminar"
+
+#: templates/supercomputer/show_system.html:51
+msgid "Linpacks"
+msgstr ""
+
+#: templates/supercomputer/table_centers.html:6
+msgid "Center"
+msgstr "Centros"
+
+#: templates/supercomputer/table_components.html:7
+msgid "Nodes"
+msgstr "Nodos"
+
+#: templates/supercomputer/table_components.html:8
+msgid "Processor"
+msgstr "Procesador"
+
+#: templates/supercomputer/table_components.html:9
+msgid "Accelerator"
+msgstr "Acelerador"
+
+#: templates/supercomputer/table_linpacks.html:12
+msgid "nhalf"
+msgstr ""
+
+#~ msgid "Add a new component"
+#~ msgstr "Crear un nuevo componente"
