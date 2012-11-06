@@ -1,15 +1,13 @@
-{% extends "base.html" %}
+{% extends "registration/base.html" %}
 {% load i18n %}
 
-{% block content %}
-<div class="span6 offset3" style="margin-top: 100px;">
-	<div class="well">
+{% block container %}
+<div class="well">
 	{% if account %}
 		<p>{% trans "Account successfully activated" %}</p>
 		<p><a href="{% url auth_login %}">{% trans "Log in" %}</a></p>
 	{% else %}
 		<p>{% trans "Account activation failed" %}</p>
 	{% endif %}
-	</div>
 </div>
 {% endblock %}
