@@ -51,6 +51,22 @@ def edit_center(request, center):
     return render_to_response('supercomputer/edit_center.html', locals(),\
                              context_instance=RequestContext(request))
 
+@login_required
+def delete_center(request, center):
+    center = get_object_or_404(Center, pk=center, user=request.user)
+
+    systems = System.objects.filter(center=center.pk)
+
+    if systems:
+        for system in systems:
+            Component.objects.filter(system=system.pk).delete()
+            Linpack.objects.filter(system=system.pk).delete()
+        systems.delete()
+
+    center.delete()
+
+    return redirect('all_centers')
+
 #----- Systems -----#
 
 @login_required
@@ -91,6 +107,18 @@ def edit_system(request, system):
         form = SystemForm(instance=system)
     return render_to_response('supercomputer/edit_system.html', locals(),\
                              context_instance=RequestContext(request))
+
+@login_required
+def delete_system(request, system):
+    system = get_object_or_404(System, pk=system, center__user=request.user)
+
+    Component.objects.filter(system=system.pk).delete()
+    Linpack.objects.filter(system=system.pk).delete()
+
+    center = system.center
+    system.delete()
+
+    return redirect('show_center', center=center.pk)
 
 #----- Components -----#
 
@@ -133,6 +161,16 @@ def edit_component(request, component):
     return render_to_response('supercomputer/edit_component.html', locals(),\
                               context_instance=RequestContext(request))
 
+@login_required
+def delete_component(request, component):
+    component = get_object_or_404(Component, pk=component,\
+                                  system__center__user=request.user)
+
+    system = component.system
+    component.delete()
+
+    return redirect('show_system', system=system.pk)
+
 #----- Linpacks -----#
 
 @login_required
@@ -174,3 +212,12 @@ def edit_linpack(request, id_linpack):
     return render_to_response('supercomputer/edit_linpack.html', locals(),\
                               context_instance=RequestContext(request))
 
+@login_required
+def delete_linpack(request, linpack):
+    linpack = get_object_or_404(Linpack, pk=linpack,\
+                               system__center__user=request.user)
+
+    system = linpack.system
+    linpack.delete()
+
+    return redirect('show_system', system=system.pk)
